@@ -2,6 +2,7 @@
 
 // Github Repository - https://github.com/lukehalley/Management
 
+// Manages employees and tracks performance
 import java.util.ArrayList;
 
 public class Manager extends Employee {
