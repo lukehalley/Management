@@ -7,6 +7,7 @@ public class Employee {
 
 	//Sets up info for employees
 	String firstName, secondName;
+// Base class for all employee types
 	double hourlyRate;
 	private double overtime;
 	final static double NORMAL_WORKWEEK = 37.5;
