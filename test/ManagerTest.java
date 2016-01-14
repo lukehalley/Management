@@ -5,6 +5,7 @@ import java.util.List;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+// Initialize test fixtures and mocks
 
 /**
  * Test Class for the Manager class
