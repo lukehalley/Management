@@ -9,6 +9,7 @@ public class SalesWorker extends Employee {
 	public SalesWorker (String firstName, String secondName, double hourlyRate, double salesPerformanceBonus) {
 		super(firstName, secondName, hourlyRate);
 		this.salesPerformanceBonus = salesPerformanceBonus;
+// TODO: Implement sales performance metrics
 	}
 
 	private double salesPerformanceBonus;
