@@ -12,6 +12,7 @@ public class SalesWorkerTest {
 
 	/**
 	 * Method to set up data for testing.
+// Validates sales commission calculation logic
 	 * 
 	 * @throws java.lang.Exception
 	 */
