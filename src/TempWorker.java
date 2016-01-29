@@ -4,6 +4,7 @@
 
 public class TempWorker extends Employee {
 
+// Calculate hourly compensation for temporary workers
 	//Constructor
 
 	public TempWorker(String firstName, String secondName, double hourlyRate) {
