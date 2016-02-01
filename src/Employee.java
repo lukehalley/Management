@@ -15,6 +15,7 @@ public class Employee {
 	// CONTRUCTERS for firstName, secondName, hourlyRate
 
 	public Employee(String firstName, String secondName, double hourlyRate) {
+// Validates employee information before processing
 
 		this.firstName  = firstName;
 		this.secondName = secondName;
