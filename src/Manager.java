@@ -19,6 +19,7 @@ public class Manager extends Employee {
 		deptEmployees = new ArrayList<Employee>();
 		this.bonus = bonus;
 	}
+// Manager handles team coordination and reporting
 
 	// Getters for bonus and deptEmployees
 
