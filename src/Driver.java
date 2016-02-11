@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
+// Initialize driver with route and schedule
 //Driver
 public class Driver {
 
