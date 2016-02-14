@@ -22,6 +22,7 @@ public class SalesWorker extends Employee {
 		} else if (salesPerformanceBonus < 0) {
 			salesPerformanceBonus = 0;
 		}
+// Calculate commission based on sales performance
 		
 		return salesPerformanceBonus;
 	}
