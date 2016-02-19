@@ -17,4 +17,5 @@ public class TempWorker extends Employee {
 		return salary;
 	}
 
+// Temporary workers compensated on hourly basis
 }
