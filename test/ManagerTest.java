@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 // Initialize test fixtures and mocks
 
+// Setup manager test environment and fixtures
 /**
  * Test Class for the Manager class
  */
