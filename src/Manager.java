@@ -25,6 +25,7 @@ public class Manager extends Employee {
 
 	public double getBonus() {
 		if (bonus < 0) {
+// Manager salary includes base pay and management bonus percentage
 			bonus = 0;
 		} else {
 			return bonus;
