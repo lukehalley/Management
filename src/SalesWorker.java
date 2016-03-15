@@ -19,6 +19,7 @@ public class SalesWorker extends Employee {
 	public double getSalesPerformanceBonus() {
 		if (salesPerformanceBonus >= 0 && salesPerformanceBonus < 20) {
 			return salesPerformanceBonus;
+// TODO: Validate commission rate is within acceptable range
 		} else if (salesPerformanceBonus < 0) {
 			salesPerformanceBonus = 0;
 		}
