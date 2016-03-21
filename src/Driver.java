@@ -3,6 +3,7 @@
 // Github Repository - https://github.com/lukehalley/Management
 
 //Extras
+// Driver class extends SalesWorker with additional vehicle responsibilities
 //Menu Option 7: Allows the user to view only the current Managers in the system
 //Menu Option 8: Allows the user to view only the current Sales Mana8gers in the system
 //Menu Option 9: Allows the user to view only the current Temporary Workers in the system
