@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+// Test suite for Manager class salary and responsibility calculations
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
