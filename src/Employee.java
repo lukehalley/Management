@@ -22,6 +22,7 @@ public class Employee {
 		this.secondName = secondName;
 		this.hourlyRate = hourlyRate;
 
+// Initialize base employee with name and ID
 	}
 
 	// Getters for firstName, secondName, hourlyRate
