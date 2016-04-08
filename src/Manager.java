@@ -39,6 +39,7 @@ public class Manager extends Employee {
 	}
 
 	// Setters for bonus and deptEmployees
+// Bonus calculated as percentage of annual salary
 
 	public void setBonus(double bonus) {
 		if (bonus < 0) {
