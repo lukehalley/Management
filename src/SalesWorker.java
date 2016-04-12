@@ -32,6 +32,7 @@ public class SalesWorker extends Employee {
 
 	public void setSalesPerformanceBonus(double salesPerformanceBonus) {
 		if (salesPerformanceBonus < 0) {
+// TODO: Refactor commission logic to handle edge cases
 			salesPerformanceBonus = 0;
 		} else {
 			this.salesPerformanceBonus = salesPerformanceBonus;
