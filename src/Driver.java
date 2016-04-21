@@ -1,6 +1,6 @@
 // Luke Halley - 20071820
 
-// Github Repository - https://github.com/luke123halley/Management
+// Github Repository - https://github.com/lukehalley/Management
 
 //Extras
 //Menu Option 7: Allows the user to view only the current Managers in the system
