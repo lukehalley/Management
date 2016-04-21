@@ -13,18 +13,20 @@ import java.util.Scanner;
 //Driver
 public class Driver {
 
+	//Setting up Scanner & Arrays
 	private Scanner sc = new Scanner(System.in);
-	
 	private ArrayList<Employee> employeeList = new ArrayList<Employee>();
 	private ArrayList<Employee> managerList = new ArrayList<Employee>();
 	private ArrayList<Employee> salesManagerList = new ArrayList<Employee>();
 	private ArrayList<Employee> tempWorkerList = new ArrayList<Employee>();
+	final static double NORMAL_WORKWEEK = 37.5;
 
 	public static void main(String[] args) {
 		Driver app = new Driver();
 		app.run();
 	}
 
+	//Main menu displaying all program 
 	private int mainMenu() {
 		System.out.print("Please select an option from this menu: \n" 
 				+ "\t1) Add a Manager.\n"
@@ -41,6 +43,8 @@ public class Driver {
 		return option;
 	}
 
+	
+	//Runs the menu and takes the users choice with event handling
 	public void run() {
 		{
 			int option = mainMenu();
@@ -160,20 +164,25 @@ public class Driver {
 
 	}
 
+	//Adds a manager with a first name, last name, hourly rate and a bonus
 	public void addManager() {
 
 		sc.nextLine();
+		
 		System.out.println("Please enter the managers's first name: ");
 		String firstName = sc.nextLine();
+		
 		System.out.println("Please enter the managers's second name: ");
 		String secondName = sc.nextLine();
+		
 		System.out.println("Please enter the managers's hourly rate: ");
 		double hourlyRate = sc.nextDouble();
+		
 		System.out.println("Please enter the managers's bonus: ");
 		double bonus = sc.nextDouble();
 		sc.nextLine();
 
-		
+		//Sends info to employee array list and manager array list
 		Manager m = new Manager (firstName, secondName, hourlyRate, bonus);
 			employeeList.add(m);
 			managerList.add(m);
@@ -181,6 +190,7 @@ public class Driver {
 		System.out.println("");
 	}
 
+	//Adds a sales worker with a first name, last name, hourly rate and a sales performace bonus
 	public void addSalesWorker() {
 
 		sc.nextLine();
@@ -201,6 +211,7 @@ public class Driver {
 		System.out.println("");
 	}
 
+	//Adds a temporary worker with a first name, last name and hourly rate.
 	public void addTemporaryWorker() {
 		sc.nextLine();
 		System.out.println("Please enter the temporary worker first name: ");
@@ -212,11 +223,12 @@ public class Driver {
 
 		TempWorker t = new TempWorker (firstName, secondName, hourlyRate);
 		employeeList.add(t);
-		tempWorkerList.add(t);
+//		tempWorkerList.add(t);
 		
 		System.out.println("");
 	}
 	
+	//Changes an exsisting employee to a manager
 	public void makeEmployeeManager() {
 		sc.nextLine();
 		if (employeeList.size() == 0) {
@@ -234,6 +246,7 @@ public class Driver {
 		}
 	}
 	
+	//Calculates the salary of a specific employee based on users inputted hours worked
 	public void calculateSalaries() {
 		sc.nextLine();
 		if (employeeList.size() == 0) {
@@ -245,11 +258,12 @@ public class Driver {
 		System.out.println("Please enter the hours worked: ");
 		int hourlyRateChoice = sc.nextInt();
 		Employee choice =employeeList.get(indexChoice);
-		System.out.println(choice + "Salary = " + (hourlyRateChoice * 37.5));
+		System.out.println(choice + "Salary = " + (hourlyRateChoice * NORMAL_WORKWEEK));
 		System.out.println("");
 		}
 	}
 
+	//Lists all current employees
 	public String listEmployees() {
 		if (employeeList.size() == 0) {
 			return "No Employees";
@@ -264,8 +278,7 @@ public class Driver {
 		}
 	}
 	
-	//LIST
-	
+	//Lists all current managers
 	public String listManagers() {
 		if (managerList.size() == 0) {
 			System.out.println("");
@@ -284,6 +297,7 @@ public class Driver {
 		}
 	}
 	
+	//Lists all current sales managers
 	public String listSalesManagers() {
 		if (salesManagerList.size() == 0) {
 			System.out.println("");
@@ -302,6 +316,7 @@ public class Driver {
 		}
 	}
 	
+	//Lists all current temporary workers
 	public String listTempWorkers() {
 		if (tempWorkerList.size() == 0) {
 			System.out.println("");

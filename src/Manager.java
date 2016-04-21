@@ -1,3 +1,5 @@
+// Luke Halley - 20071820
+
 import java.util.ArrayList;
 
 public class Manager extends Employee {
@@ -6,7 +8,7 @@ public class Manager extends Employee {
 	private ArrayList<Employee> deptEmployees;
 	final static double NORMAL_WORKWEEK = 37.5;
 
-	// CONSTRUCTOR which calls on Superclass and for deptEmployees and bonus
+	// Constructor which calls on Superclass and for deptEmployees and bonus
 
 	public Manager(String firstName, String secondName, double hourlyRate, double bonus) {
 		super(firstName, secondName, hourlyRate);
@@ -15,7 +17,7 @@ public class Manager extends Employee {
 		this.bonus = bonus;
 	}
 
-	// GETTERS for bonus and deptEmployees
+	// Getters for bonus and deptEmployees
 
 	public double getBonus() {
 		if (bonus < 0) {
@@ -31,7 +33,7 @@ public class Manager extends Employee {
 		return deptEmployees;
 	}
 
-	// SETTERS for bonus and deptEmployees
+	// Setters for bonus and deptEmployees
 
 	public void setBonus(double bonus) {
 		if (bonus < 0) {
@@ -46,7 +48,7 @@ public class Manager extends Employee {
 		this.deptEmployees = dept;
 	}
 
-	// METHODS for adding deptEmployees, returning the size of deptEmployees and calculating the salary + bonus
+	// Methods for adding deptEmployees, returning the size of deptEmployees and calculating the salary + bonus
 
 	public void addDeptEmployee(Employee worker) {
 		deptEmployees.add(worker);
@@ -61,6 +63,7 @@ public class Manager extends Employee {
 		return salary;
 	}
 	
+	// String to string method for driver class
     public String toString()
     {
         return "First Name: " + firstName

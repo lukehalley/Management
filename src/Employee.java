@@ -1,7 +1,9 @@
-//Superclass
+// Luke Halley - 20071820
 
+//Superclass
 public class Employee {
 
+	//Sets up info for employees
 	String firstName, secondName;
 	double hourlyRate;
 	private double overtime;
@@ -17,7 +19,7 @@ public class Employee {
 
 	}
 
-	// GETTERS for firstName, secondName, hourlyRate
+	// Getters for firstName, secondName, hourlyRate
 
 	public String getFirstName() {
 		return firstName;
@@ -36,7 +38,7 @@ public class Employee {
 		return hourlyRate;
 	}
 
-	// SETTERS for firstName, secondName, hourlyRate
+	// Setters for firstName, secondName, hourlyRate
 
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -76,6 +78,8 @@ public class Employee {
 		return overtime;
 		
 	}
+	
+	//String to String method for driver class
 	
     public String toString()
     {
