@@ -1,24 +1,11 @@
-// Luke Halley - 20071820
-
-//Extras
-//Menu Option 7: Allows the user to view only the current Managers in the system
-//Menu Option 8: Allows the user to view only the current Sales Mana8gers in the system
-//Menu Option 9: Allows the user to view only the current Temporary Workers in the system
-
-//Importing libraries 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
-//Driver
 public class Driver {
 
 	private Scanner sc = new Scanner(System.in);
-	
 	private ArrayList<Employee> employeeList = new ArrayList<Employee>();
 	private ArrayList<Employee> managerList = new ArrayList<Employee>();
-	private ArrayList<Employee> salesManagerList = new ArrayList<Employee>();
-	private ArrayList<Employee> tempWorkerList = new ArrayList<Employee>();
 
 	public static void main(String[] args) {
 		Driver app = new Driver();
@@ -33,9 +20,7 @@ public class Driver {
 				+ "\t4) Add an Existing Employee to a Manager’s Department.\n"
 				+ "\t5) Calculate salaries for each employee or the total for all employees\n"
 				+ "\t6) Print employee details.\n" 
-				+ "\t7) Print all manager details.\n" 
-				+ "\t8) Print all sales manager details.\n" 
-				+ "\t9) Print all temporary worker details.\n" 
+				+ "\t7) Print manager details.\n" 
 				+ "\t0) Quit.\n" + "=> ");
 		int option = sc.nextInt();
 		return option;
@@ -115,25 +100,7 @@ public class Driver {
 					try {
 						System.out.println(listManagers());
 					} catch (Exception e) {
-						System.out.println("Error listing managers: " + e);
-					}
-					System.out.println("");
-					option = mainMenu();
-					break;
-				case 8:
-					try {
-						System.out.println(listSalesManagers());
-					} catch (Exception e) {
-						System.out.println("Error listing sales managers: " + e);
-					}
-					System.out.println("");
-					option = mainMenu();
-					break;
-				case 9:
-					try {
-						System.out.println(listTempWorkers());
-					} catch (Exception e) {
-						System.out.println("Error listing temporary workers: " + e);
+						System.out.println("Error calculating salaries for each employee or the total for all employees: " + e);
 					}
 					System.out.println("");
 					option = mainMenu();
@@ -191,10 +158,7 @@ public class Driver {
 		System.out.println("Please enter the sales worker's sales performance bonus: ");
 		double salesPerformanceBonus = sc.nextDouble();
 
-		SalesWorker s = new SalesWorker (firstName, secondName, hourlyRate, salesPerformanceBonus);
-			employeeList.add(s);
-			salesManagerList.add(s);
-			
+		employeeList.add(new SalesWorker(firstName, secondName, hourlyRate, salesPerformanceBonus));
 
 		System.out.println("");
 	}
@@ -208,19 +172,13 @@ public class Driver {
 		System.out.println("Please enter the temporary worker hourly rate: ");
 		double hourlyRate = sc.nextDouble();
 
-		TempWorker t = new TempWorker (firstName, secondName, hourlyRate);
-		employeeList.add(t);
-		tempWorkerList.add(t);
-		
+		employeeList.add(new TempWorker(firstName, secondName, hourlyRate));
+
 		System.out.println("");
 	}
 	
 	public void makeEmployeeManager() {
 		sc.nextLine();
-		if (employeeList.size() == 0) {
-			mainMenu();
-			System.out.println("No Employees");
-		} else {
 		System.out.println("Please enter the index of the employee you wish to become a Manager: ");
 		int indexChoice = sc.nextInt();
 
@@ -229,15 +187,9 @@ public class Driver {
 		managerList.add(choice);
 
 		System.out.println("");
-		}
 	}
 	
 	public void calculateSalaries() {
-		sc.nextLine();
-		if (employeeList.size() == 0) {
-			mainMenu();
-			System.out.println("No Employees");
-		} else {
 		sc.nextLine();
 		System.out.println("Please enter the index of the employee you wish to calculate the salary for: ");
 		int indexChoice = sc.nextInt();
@@ -247,7 +199,6 @@ public class Driver {
 		managerList.add(choice);
 
 		System.out.println("");
-		}
 	}
 
 	public String listEmployees() {
@@ -264,61 +215,19 @@ public class Driver {
 		}
 	}
 	
-	//LIST
-	
 	public String listManagers() {
 		if (managerList.size() == 0) {
-			System.out.println("");
 			return "No Managers";
 		} else {
-			System.out.println("");
-			System.out.println("All Manager Detail's");
-			System.out.println("");
 			String listOfManagers = "";
 			int index = 0;
 			for (int i = 0; i < managerList.size(); i++) {
-				listOfManagers = listOfManagers + index + ": " + managerList.get(i) + "\n";
+				listOfManagers = listOfManagers + index + ": " + employeeList.get(i) + "\n";
 				index++;
 			}
 			return listOfManagers;
 		}
 	}
 	
-	public String listSalesManagers() {
-		if (salesManagerList.size() == 0) {
-			System.out.println("");
-			return "No Sales Managers";
-		} else {
-			System.out.println("");
-			System.out.println("All Sales Manager Detail's");
-			System.out.println("");
-			String listOfSalesManagers = "";
-			int index = 0;
-			for (int i = 0; i < salesManagerList.size(); i++) {
-				listOfSalesManagers = listOfSalesManagers + index + ": " + salesManagerList.get(i) + "\n";
-				index++;
-			}
-			return listOfSalesManagers;
-		}
-	}
-	
-	public String listTempWorkers() {
-		if (tempWorkerList.size() == 0) {
-			System.out.println("");
-			return "No Temporary Managers";
-		} else {
-			System.out.println("");
-			System.out.println("All Temporary Managers Detail's");
-			System.out.println("");
-			String listOfTempWorkers = "";
-			int index = 0;
-			for (int i = 0; i < tempWorkerList.size(); i++) {
-				listOfTempWorkers = listOfTempWorkers + index + ": " + tempWorkerList.get(i) + "\n";
-				index++;
-			}
-			return listOfTempWorkers;
-		}
-		
-	}
 
 }
