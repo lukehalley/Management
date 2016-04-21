@@ -95,7 +95,9 @@ public class Driver {
 
 				case 5:
 					try {
-						
+						System.out.println(listEmployees());
+						System.out.println("");
+						calculateSalaries();				
 					} catch (Exception e) {
 						System.out.println( "Error calculating salaries for each employee or the total for all employees: " + e);
 					}
@@ -238,14 +240,12 @@ public class Driver {
 			mainMenu();
 			System.out.println("No Employees");
 		} else {
-		sc.nextLine();
 		System.out.println("Please enter the index of the employee you wish to calculate the salary for: ");
 		int indexChoice = sc.nextInt();
-
+		System.out.println("Please enter the hours worked: ");
+		int hourlyRateChoice = sc.nextInt();
 		Employee choice =employeeList.get(indexChoice);
-		System.out.println(choice + "Salary = ");
-		managerList.add(choice);
-
+		System.out.println(choice + "Salary = " + (hourlyRateChoice * 37.5));
 		System.out.println("");
 		}
 	}
