@@ -1,5 +1,7 @@
 // Luke Halley - 20071820
 
+// Github Repository - https://github.com/luke123halley/Management
+
 public class SalesWorker extends Employee {
 
 	// Constructor

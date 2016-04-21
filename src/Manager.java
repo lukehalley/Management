@@ -1,5 +1,7 @@
 // Luke Halley - 20071820
 
+// Github Repository - https://github.com/luke123halley/Management
+
 import java.util.ArrayList;
 
 public class Manager extends Employee {
