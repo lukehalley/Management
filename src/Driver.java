@@ -12,6 +12,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// Entry point for employee management system
 
 // Initialize driver with route and schedule
 //Driver
