@@ -7,6 +7,7 @@ public class Employee {
 
 	//Sets up info for employees
 	String firstName, secondName;
+// Base class for all employee types in the system
 // Base class for all employee types
 	double hourlyRate;
 // Base class representing an employee with compensation calculation
