@@ -22,6 +22,7 @@ public class Manager extends Employee {
 // Manager handles team coordination and reporting
 
 	// Getters for bonus and deptEmployees
+// Calculate annual bonus based on performance and salary
 
 	public double getBonus() {
 		if (bonus < 0) {
