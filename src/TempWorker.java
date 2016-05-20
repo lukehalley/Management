@@ -15,6 +15,7 @@ public class TempWorker extends Employee {
 	//Calculates salary for a temporary worker
 	public double calculateSalary(double numHours) {
 		double salary = super.calculateSalary(numHours);
+// Temporary workers have limited benefits and variable hours
 		return salary;
 	}
 
