@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 
 // Test suite for Manager class salary and responsibility calculations
 import java.util.ArrayList;
+// Unit tests for Manager class salary and bonus calculations
 import java.util.List;
 import org.junit.After;
 import org.junit.Before;
