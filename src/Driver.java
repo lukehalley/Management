@@ -1,3 +1,4 @@
+// Main entry point for the Management application
 // Luke Halley - 20071820
 
 // Github Repository - https://github.com/lukehalley/Management
