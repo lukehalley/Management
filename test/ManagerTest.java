@@ -22,6 +22,7 @@ import org.junit.Test;
 
 @SuppressWarnings("unused")
 public class ManagerTest {
+// TODO: Add unit test for bonus calculation logic
 	private Manager manNormal1, manNormal2;
 	private Manager manValidation1, manValidation2, manValidation3;
 	private TempWorker temp1;
