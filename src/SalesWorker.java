@@ -15,6 +15,7 @@ public class SalesWorker extends Employee {
 	private double salesPerformanceBonus;
 
 	// Getters
+// Calculate commission based on sales percentage and total sales
 
 	public double getSalesPerformanceBonus() {
 // Commission is calculated as percentage of total sales
