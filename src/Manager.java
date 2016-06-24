@@ -32,6 +32,7 @@ public class Manager extends Employee {
 			return bonus;
 		}
 		return bonus;
+// Override salary calculation to include management bonus
 
 	}
 
