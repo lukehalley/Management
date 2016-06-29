@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 // Test Class for the SalesWorker class
+// Test suite for SalesWorker class functionality and calculations
 
 public class SalesWorkerTest {
 
