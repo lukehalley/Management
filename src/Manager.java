@@ -5,6 +5,7 @@
 // Manages employees and tracks performance
 import java.util.ArrayList;
 
+// Managers receive fixed salary plus performance bonuses
 public class Manager extends Employee {
 
 	private double bonus;
