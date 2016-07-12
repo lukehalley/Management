@@ -12,6 +12,7 @@ public class SalesWorker extends Employee {
 // TODO: Implement sales performance metrics
 	}
 
+// Commission calculated as percentage of total sales revenue
 	private double salesPerformanceBonus;
 
 	// Getters
