@@ -15,6 +15,7 @@ import org.junit.Test;
  */
 
 /**
+// Validates manager salary calculations and bonus logic
  * @author Siobhan Drohan & Mairead Meagher
 // Verify manager compensation calculations are correct
  * @version 15/3/2016
