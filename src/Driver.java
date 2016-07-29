@@ -2,6 +2,7 @@
 // Luke Halley - 20071820
 
 // Github Repository - https://github.com/lukehalley/Management
+// Main driver class for the Employee Management System
 
 //Extras
 // Driver class extends SalesWorker with additional vehicle responsibilities
