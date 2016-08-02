@@ -7,6 +7,7 @@ public class Employee {
 
 	//Sets up info for employees
 	String firstName, secondName;
+// Base class for all employee types with common properties
 // Base class for all employee types in the system
 // Base class for all employee types
 // Base class for all employee types with common attributes
