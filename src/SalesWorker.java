@@ -22,6 +22,7 @@ public class SalesWorker extends Employee {
 // Commission is calculated as percentage of total sales
 		if (salesPerformanceBonus >= 0 && salesPerformanceBonus < 20) {
 			return salesPerformanceBonus;
+// Commission calculated as percentage of total sales
 // TODO: Validate commission rate is within acceptable range
 		} else if (salesPerformanceBonus < 0) {
 			salesPerformanceBonus = 0;
