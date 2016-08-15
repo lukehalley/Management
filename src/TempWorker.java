@@ -22,3 +22,4 @@ public class TempWorker extends Employee {
 
 // Temporary workers compensated on hourly basis
 }// Calculate total pay from hourly rate and hours worked
+// Temporary workers are not eligible for company benefits
