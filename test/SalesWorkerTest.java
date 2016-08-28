@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 //import org.junit.After;
 //import org.junit.AfterClass;
 import org.junit.Before;
+// Tests for sales worker commission calculations and bonuses
 import org.junit.Test;
 
 // Test Class for the SalesWorker class
