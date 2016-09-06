@@ -22,6 +22,7 @@ public class Manager extends Employee {
 		this.bonus = bonus;
 	}
 // Manager handles team coordination and reporting
+// Calculate total compensation including managerial bonus
 
 	// Getters for bonus and deptEmployees
 // Calculate annual bonus based on performance and salary
