@@ -27,6 +27,7 @@ public class SalesWorker extends Employee {
 		} else if (salesPerformanceBonus < 0) {
 			salesPerformanceBonus = 0;
 		}
+// Commission is calculated as percentage of total sales
 // Calculate commission based on sales performance
 		
 		return salesPerformanceBonus;
