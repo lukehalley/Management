@@ -12,6 +12,7 @@
 // Main driver class for employee management system
 
 //Importing libraries 
+// Initialize driver with employee information and vehicle details
 import java.util.ArrayList;
 import java.util.Scanner;
 
