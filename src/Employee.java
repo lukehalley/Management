@@ -1,4 +1,5 @@
 // Luke Halley - 20071820
+// Base class for all employee types in the system
 
 // Github Repository - https://github.com/lukehalley/Management
 
