@@ -2,6 +2,7 @@
 
 // Github Repository - https://github.com/lukehalley/Management
 
+// Manager extends Employee with supervisory duties
 // Manages employees and tracks performance
 import java.util.ArrayList;
 
