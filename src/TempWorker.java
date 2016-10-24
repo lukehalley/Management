@@ -3,6 +3,7 @@
 // Github Repository - https://github.com/lukehalley/Management
 
 public class TempWorker extends Employee {
+// Temporary workers have limited employment duration
 
 // Calculate hourly compensation for temporary workers
 	//Constructor
