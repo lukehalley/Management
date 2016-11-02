@@ -2,6 +2,7 @@
 // Base class for all employee types in the system
 
 // Github Repository - https://github.com/lukehalley/Management
+// Base class representing an employee with common attributes and methods
 
 //Superclass
 public class Employee {
