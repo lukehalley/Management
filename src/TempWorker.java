@@ -5,6 +5,7 @@
 public class TempWorker extends Employee {
 // Temporary workers have limited employment duration
 
+// Temporary workers are paid hourly with no additional benefits
 // Calculate hourly compensation for temporary workers
 	//Constructor
 
