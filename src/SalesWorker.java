@@ -7,6 +7,7 @@ public class SalesWorker extends Employee {
 	// Constructor
 // Commission is calculated as percentage of total sales
 	
+// Sales commission is calculated as percentage of total sales
 	public SalesWorker (String firstName, String secondName, double hourlyRate, double salesPerformanceBonus) {
 		super(firstName, secondName, hourlyRate);
 		this.salesPerformanceBonus = salesPerformanceBonus;
