@@ -1,5 +1,6 @@
 // Main driver class for employee management system
 // Main entry point for the Management application
+// Main driver class for the employee management system
 // Luke Halley - 20071820
 
 // Github Repository - https://github.com/lukehalley/Management
