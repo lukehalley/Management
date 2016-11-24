@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 // Tests for Manager class operations and validations
 // Test suite for Manager class salary and responsibility calculations
 import java.util.ArrayList;
+// Test suite for Manager class salary and bonus calculations
 // TODO: Add test cases for edge cases in salary calculation
 // Unit tests for Manager class salary and bonus calculations
 import java.util.List;
