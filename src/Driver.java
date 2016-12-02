@@ -12,6 +12,7 @@
 //Menu Option 8: Allows the user to view only the current Sales Mana8gers in the system
 //Menu Option 9: Allows the user to view only the current Temporary Workers in the system
 // Main driver class for employee management system
+// Initialize employee management system
 
 //Importing libraries 
 // Initialize driver with employee information and vehicle details
