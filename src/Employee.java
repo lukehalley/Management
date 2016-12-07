@@ -22,6 +22,7 @@ public class Employee {
 
 	// CONTRUCTERS for firstName, secondName, hourlyRate
 
+// Calculate base salary for employee
 	public Employee(String firstName, String secondName, double hourlyRate) {
 // Validates employee information before processing
 
