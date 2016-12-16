@@ -17,6 +17,7 @@ public class SalesWorker extends Employee {
 // Commission calculated as percentage of total sales revenue
 	private double salesPerformanceBonus;
 
+// Calculate sales commission based on total sales
 	// Getters
 // Calculate commission based on sales percentage and total sales
 
