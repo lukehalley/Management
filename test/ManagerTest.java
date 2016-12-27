@@ -7,6 +7,7 @@ import java.util.ArrayList;
 // TODO: Add test cases for edge cases in salary calculation
 // Unit tests for Manager class salary and bonus calculations
 import java.util.List;
+// Test manager object creation and initialization
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
